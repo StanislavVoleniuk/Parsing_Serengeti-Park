@@ -1,7 +1,9 @@
 # Parsing_Serengeti-Park
-This notebook shows how to automate the opening of the Serengeti Park website, navigate through menu links, and extract unique text from pages, including clickable content.
+In this notebook, we use Selenium and BeautifulSoup to **fully scrape the website Serengeti-Park.de**, including menu navigation, collecting all unique text, and clicking on interactive elements like "Mehr" buttons.  
+The goal is to **train a bot** so it understands the website's structure and knows where each piece of information is located.
 
-# Import required libraries and launch browser
+
+# Script
 from selenium.webdriver import Chrome
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
@@ -15,7 +17,6 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 import time
 
-# Script
 service = Service("C:/Users/Luda/Downloads/chromedriver-win64/chromedriver-win64/chromedriver.exe")
 browser = Chrome(service=service)
 browser.maximize_window()
