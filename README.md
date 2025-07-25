@@ -4,6 +4,7 @@ The goal is to **train a bot** so it understands the website's structure and kno
 
 
 # Script
+```python
 from selenium.webdriver import Chrome
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
